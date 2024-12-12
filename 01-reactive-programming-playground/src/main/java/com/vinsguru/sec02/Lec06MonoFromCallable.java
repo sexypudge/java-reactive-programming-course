@@ -17,7 +17,7 @@ public class Lec06MonoFromCallable {
     public static void main(String[] args) {
 
         var list = List.of(1, 2, 3);
-        Mono.fromCallable(() -> sum(list))
+        Mono.fromCallable(() -> sum(list)) // not throw exception
                 .subscribe(Util.subscriber());
 
     }

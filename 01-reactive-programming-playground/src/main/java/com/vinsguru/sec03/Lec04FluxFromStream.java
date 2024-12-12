@@ -18,7 +18,7 @@ public class Lec04FluxFromStream {
 //        stream.forEach(System.out::println);
 //        stream.forEach(System.out::println);
 
-        var flux = Flux.fromStream(list::stream);
+        var flux = Flux.fromStream(stream);
 
         flux.subscribe(Util.subscriber("sub1"));
         flux.subscribe(Util.subscriber("sub2"));

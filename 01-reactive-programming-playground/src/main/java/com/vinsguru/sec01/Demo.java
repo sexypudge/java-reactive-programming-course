@@ -30,6 +30,7 @@ public class Demo {
         var publisher = new PublisherImpl();
         var subscriber = new SubscriberImpl();
         publisher.subscribe(subscriber);
+
         subscriber.getSubscription().request(3);
         Thread.sleep(Duration.ofSeconds(2));
         subscriber.getSubscription().request(3);

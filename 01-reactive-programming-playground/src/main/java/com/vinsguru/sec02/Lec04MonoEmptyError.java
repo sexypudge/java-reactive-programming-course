@@ -14,6 +14,10 @@ public class Lec04MonoEmptyError {
         getUsername(3)
                 .subscribe(Util.subscriber());
 
+        getUsername(3).subscribe(System.out::println, err -> {
+                    System.out.println(err.getMessage());
+        });
+
     }
 
     private static Mono<String> getUsername(int userId){

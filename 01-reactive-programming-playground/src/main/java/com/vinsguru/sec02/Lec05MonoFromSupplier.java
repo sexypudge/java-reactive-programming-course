@@ -17,7 +17,7 @@ public class Lec05MonoFromSupplier {
     public static void main(String[] args) {
 
         var list = List.of(1, 2, 3);
-        Mono.fromSupplier(() -> sum(list))
+        Mono.fromSupplier(() -> sum(list)) // delay execution
                 .subscribe(Util.subscriber());
 
     }

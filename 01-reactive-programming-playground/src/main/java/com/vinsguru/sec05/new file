@@ -1,0 +1,24 @@
+ c.v.sec05.Lec03DoCallbacks     : doFirst-2
+ c.v.sec05.Lec03DoCallbacks     : doFirst-1
+ c.v.sec05.Lec03DoCallbacks     : doOnSubscribe-1: reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber@815b41f
+ c.v.sec05.Lec03DoCallbacks     : doOnSubscribe-2: reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber@44c03695
+ c.v.sec05.Lec03DoCallbacks     : doOnRequest-2: 9223372036854775807
+ c.v.sec05.Lec03DoCallbacks     : doOnRequest-1: 2
+ c.v.sec05.Lec03DoCallbacks     : producer begins
+ c.v.sec05.Lec03DoCallbacks     : doOnNext-1: 0
+ c.v.sec05.Lec03DoCallbacks     : doOnNext-2: 0
+ c.v.common.DefaultSubscriber   : subscriber received: 0
+ c.v.sec05.Lec03DoCallbacks     : doOnNext-1: 1
+ c.v.sec05.Lec03DoCallbacks     : doOnNext-2: 1
+ c.v.common.DefaultSubscriber   : subscriber received: 1
+ c.v.sec05.Lec03DoCallbacks     : doOnCancel-1
+ c.v.sec05.Lec03DoCallbacks     : doFinally-1: cancel
+ c.v.sec05.Lec03DoCallbacks     : doOnComplete-2
+ c.v.sec05.Lec03DoCallbacks     : doOnTerminate-2
+ c.v.common.DefaultSubscriber   : subscriber received complete!
+ c.v.sec05.Lec03DoCallbacks     : doFinally-2: onComplete
+ c.v.sec05.Lec03DoCallbacks     : doOnDiscard-1: 2
+ c.v.sec05.Lec03DoCallbacks     : doOnDiscard-2: 2
+ c.v.sec05.Lec03DoCallbacks     : doOnDiscard-1: 3
+ c.v.sec05.Lec03DoCallbacks     : doOnDiscard-2: 3
+ c.v.sec05.Lec03DoCallbacks     : producer ends

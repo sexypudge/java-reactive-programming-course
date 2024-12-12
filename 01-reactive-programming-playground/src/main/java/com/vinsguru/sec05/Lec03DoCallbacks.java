@@ -20,7 +20,7 @@ public class Lec03DoCallbacks {
                     fluxSink.next(i);
                 }
                 fluxSink.complete();
-               // fluxSink.error(new RuntimeException("oops"));
+//                fluxSink.error(new RuntimeException("oops"));
                 log.info("producer ends");
             })
             .doOnComplete(() -> log.info("doOnComplete-1"))
@@ -33,7 +33,7 @@ public class Lec03DoCallbacks {
             .doOnCancel(() -> log.info("doOnCancel-1"))
             .doOnDiscard(Object.class, o -> log.info("doOnDiscard-1: {}", o))
             .doFinally(signal -> log.info("doFinally-1: {}", signal)) // finally irrespective of the reason
-           // .take(2)
+            .take(2)
             .doOnComplete(() -> log.info("doOnComplete-2"))
             .doFirst(() -> log.info("doFirst-2"))
             .doOnNext(item -> log.info("doOnNext-2: {}", item))

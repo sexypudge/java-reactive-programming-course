@@ -9,9 +9,9 @@ public class Lec06Log {
 
 
         Flux.range(1, 5)
-                .log()
+                .log("range-map")
                 .map(i -> Util.faker().name().firstName())
-                .log()
+                .log("name-map")
                 .subscribe(Util.subscriber());
 
 

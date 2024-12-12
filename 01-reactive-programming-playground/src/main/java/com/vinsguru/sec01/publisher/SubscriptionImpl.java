@@ -28,9 +28,10 @@ public class SubscriptionImpl implements Subscription {
         log.info("subscriber has requested {} items", requested);
         if(requested > MAX_ITEMS){
             this.subscriber.onError(new RuntimeException("validation failed"));
-            this.isCancelled = true;
+            this.isCancelled = true; // if error, no send item anymore
             return;
         }
+
         for (int i = 0; i < requested && count < MAX_ITEMS; i++) {
             count++;
             this.subscriber.onNext(this.faker.internet().emailAddress());
@@ -38,7 +39,7 @@ public class SubscriptionImpl implements Subscription {
         if(count == MAX_ITEMS){
             log.info("no more data to produce");
             this.subscriber.onComplete();
-            this.isCancelled = true;
+            this.isCancelled = true; // if completed, no send item anymore
         }
     }
 
